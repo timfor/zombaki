@@ -1,8 +1,7 @@
 import React from 'react';
 import { useWallet } from '@suiet/wallet-kit'
 import { TransactionBlock } from "@mysten/sui.js";
-
-
+import '../styles/mint.css'
 
 
 
@@ -21,7 +20,7 @@ const Mint = () => {
 
 
 
-	// не ворк
+	// вообщем здесь происходит открытие окна и подписание и тд разбирайся
 
 	async function handleSignAndExecuteTxBlock() {
 
@@ -56,12 +55,16 @@ const Mint = () => {
 		<>
 			<div className='container'>
 				<h1>Mint Your хуесос here</h1>
-				<button onClick={handleClick}>Вывести в консоль инфу о подключенном кошеле</button>
-				<button onClick={handleSignAndExecuteTxBlock}>Минт</button>
+
+				{/* инфа о кошеле */}
+				{/* <button onClick={handleClick}>Вывести в консоль инфу о подключенном кошеле</button> */}
 
 
-				{/* не ворк */}
-				{/* <button onClick={handleSignAndExecuteTxBlock}>кнопка минта хз ворк не</button> */}
+
+				<button className='mint-btn' onClick={handleSignAndExecuteTxBlock}>Mint</button>
+
+
+
 
 			</div>
 		</>

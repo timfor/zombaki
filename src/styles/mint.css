@@ -1,0 +1,19 @@
+.mint-btn {
+	padding: 20px;
+
+	padding-left: 30px;
+	padding-right: 30px;
+
+	border-radius: 10px;
+
+
+	background-color: var(--сolor-active-reverse);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex-direction: column;
+}
