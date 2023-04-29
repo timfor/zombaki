@@ -1,38 +1,139 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-header: #2C2C32;
+  --color-header-reverse: #3c4141;
+
+
+  --color-header-more-black: #353538;
+
+  --color-bg: #eee5f8;
+  --color-container: #cfc9cf;
+
+
+  --color-active: #c89fd9;
+  --сolor-active-reverse: #b0d99f;
+
+
+  --color-inactive: #becbcf;
+
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Bangers', cursive;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+header,
+footer {
+  background-color: var(--color-header);
+
+
+}
+
+
+header a,
+footer a {
+  color: var(--color-inactive);
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+header>a:hover,
+footer>a:hover {
+  text-decoration: underline;
+
+}
+
+
+
+/* header, footer */
+.hf-cont {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 200px;
+
+  max-width: 1600px;
+
+
+}
+
+.hf-cont-elem {
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+
+#n2 {
+  width: 600px;
+}
+
+
+/* logo */
+#logo_sui_outlaws {
+  width: 200px;
+}
+
+#logo_sui_outlaws1 {
+  width: 200px;
+  position: relative;
+  right: 90px;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+.container {
+  max-width: 1400px;
+  min-height: 600px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0 auto;
+
+  background-color:#3c414156;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* 364d4d */
+/* 515b61 */
+main {
+  min-height: calc(100vh - 85px - 22px);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #6e9898;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  text-decoration: none;
+  color: var(--color-bg);
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover {
+  text-decoration: underline;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.active {
+  color: var(--color-active);
+  cursor: default;
 }

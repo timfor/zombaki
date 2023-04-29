@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
+
+
+// styles
 import './App.css';
+
+
+//components
+import Layout from "./components/layout"
+import Mint from "./components/Mint"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Layout />} >
+          <Route index element={<h1>Main page here</h1>} />
+          <Route path='mint' element={<Mint />} />
+          <Route path='/subcribe' element={<h1>Subcribe page here</h1>} />
+        </Route>
+      </Routes >
+    </>
   );
 }
 
