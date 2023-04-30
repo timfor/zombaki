@@ -26,13 +26,15 @@ const Mint = () => {
 
 		// define a programmable transaction
 
-
 		const tx = new TransactionBlock();
-		const packageObjectId = "0xXXX";
+		const packageObjectId = "0xb7fe00dac09a53cdaa0edfd4000e726bd4afc58834048104750515f57e0675e9";
 		tx.moveCall({
-			target: `${packageObjectId}::nft::mint`,
+			target: `${packageObjectId}::capy_item::StoreOwnerCap`,
 			arguments: [tx.pure("Example NFT")],
 		});
+
+
+
 
 		try {
 			// execute the programmable transaction
