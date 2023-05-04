@@ -107,17 +107,24 @@ h1 {
   padding-right: 2rem;
   margin: 0 auto;
 
-  background-color:#3c414156;
+  background-color: #3c414156;
 }
 
 
 /* 364d4d */
+
 /* 515b61 */
 main {
   min-height: calc(100vh - 85px - 22px);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  background-color: #6e9898;
+  /* background-image: url('./images/bodymmm.jpg'); */
+  /* background-image: url('./images/beton2.png'); */
+  background-color: #4a4a6565;
+
+  /* background-image: url('./images/back2.png'); */
+
+
 }
 
 a {

@@ -10,10 +10,45 @@
 	background-color: var(--сolor-active-reverse);
 }
 
-.container {
+.container-mint {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
+	min-height: 900px;
+	min-width: 900px;
+
 	flex-direction: column;
+
+	background-size: 30%;
+
+	background-image: url("../images/mint_back.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	background-position-y: center;
+	background-position-x: center;
+}
+
+
+.container-mint-1 {
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 700px;
+	min-width: 500px;
+
+	background-image: url("../images/mintsoon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	background-size: 500px;
+	background-position-y: center;
+	background-position-x: center;
+
+
+
 }

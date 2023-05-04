@@ -1,0 +1,40 @@
+.container-main {
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 300px;
+	max-width: 900px;
+
+	flex-direction: ROW;
+
+
+
+}
+
+.container-main h1 {
+	font-size: 250px;
+	padding: 20px;
+}
+
+.container-main h1:hover {
+	color: brown;
+	background-image: url('../images/outlawer1.png');
+}
+
+.foo:hover .hidden-img {
+	display: inline-block;
+
+}
+
+.hidden-img {
+	display: none;
+}
+
+
+.foo,
+.foo p {
+	display: inline-block
+}

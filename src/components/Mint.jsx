@@ -29,8 +29,8 @@ const Mint = () => {
 		const tx = new TransactionBlock();
 		const packageObjectId = "0xb7fe00dac09a53cdaa0edfd4000e726bd4afc58834048104750515f57e0675e9";
 		tx.moveCall({
-			target: `${packageObjectId}::capy_item::StoreOwnerCap`,
-			arguments: [tx.pure("Example NFT")],
+			target: `${packageObjectId}::capy_item::sell`,
+			arguments: [tx.pure("")],
 		});
 
 
@@ -55,8 +55,48 @@ const Mint = () => {
 
 	return (
 		<>
-			<div className='container'>
-				<h1>Mint Your хуесос here</h1>
+
+
+			<div className='container-mint-1'>
+
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<div className='container-mint'>
 
 				{/* инфа о кошеле */}
 				{/* <button onClick={handleClick}>Вывести в консоль инфу о подключенном кошеле</button> */}
